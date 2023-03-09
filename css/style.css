@@ -25,10 +25,6 @@ main h2 {
 
 /* display: flex; */
 
-section {
-    height: 350px;
-}
-
 #welcome {
     display: flex;
     /* height: 100px; */
@@ -189,12 +185,12 @@ section {
     justify-content: flex-end;
 }
 
-footer div {
+/* footer div {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
+} */
 
 form {
     /* display: flex;
