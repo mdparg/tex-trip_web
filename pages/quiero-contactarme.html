@@ -52,34 +52,48 @@ integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6
 </nav>
   </header>
   <!-- Cuerpo de la web - Main -->
+  <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
   <main>
+
     <div class="seccion">
       <form action="" method="post">
-        <fieldset>
-          <legend>Dejanos tus datos</legend>
-          <div>
-            <label for="">Tu nombre</label>
-            <input type="text" name="Tu nombre" id="nombre">
-          </div>
-          <div>
-            <label for="">Tu email</label>
-            <input type="email" name="Tu email" id="mail">
-          </div>
-          <div>
-            <label for="">Tu Whatsapp</label>
-            <input type="tel" name="Tu whatsapp" id="whatsapp">
-          </div>
-          <div>
-            <label for="">Es tu</label>
-            <div class="sexo">
-              <input type="radio" name="tipo" id="tipo" value="primer-viaje"><label for="radio">Mi primer viaje :)</label>
-              <input type="radio" name="tipo" id="tipo" value="segundo-viaje"><label for="radio">Ya eh viajado</label>
-            </div>
-          </div>
-          <div id="boton">
-          <input type="button" value="Enviar" class="myButton">
-        </div>
-        </fieldset>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Tu nombre</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Juan Perez">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Tu email</label>
+        <Input type="email" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Tu whatsapp</label>
+        <Input type="tel" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>   
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Mi primera experiencia
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+          Ya he viajado
+        </label>
+      </div>   
+      <fieldset>
+        <div id="boton">
+        <input type="button" value="Enviar" class="myButton">
+      </div>
+      </fieldset>
       </form>
     </div>
   </main>
