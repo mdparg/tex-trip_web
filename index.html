@@ -6,6 +6,9 @@
     <meta charset="UTF-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CDN BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Link Css -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico">
@@ -13,48 +16,79 @@
 </head>
 
 <body>
+    <!-- Link JS Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <!-- Encabezado -->
-    <header>
-        <a href="#"><img class="imglogo" src="./images/logos/textrip-Logo-Azul-Sin-Slogan.png" alt="Tex-Trip: Logo"></a>
-        <nav> <!--HACE REFERENCIA A LA BARRRA DE NAVEGACION-->
-            <ul>
-                <li><a class="aactive" href="#">Inicio</a></li>
-                <li><a href="./pages/por-donde-empiezo.html">Por donde empiezo</a></li>
-                <li><a href="./pages/como-podemos-ayudarte.html">Como podemos ayudarte</a></li>
-                <li><a href="./pages/tips-de-viaje.html">Tips de viaje</a></li>
-                <li><a href="./pages/quiero-contactarme.html">Quiero contactarme</a></li>
-            </ul>
-        </nav>
-    </header>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #3dbda3; color: #2e3e5d;">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/logos/textrip-Logo-Azul-Sin-Slogan.png" alt="Traveler's Experience" width="80">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active aria-current" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/por-donde-empiezo.html">Por donde empiezo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/quienes-somos.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/tips-de-viaje.html">Tips de viaje</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/quiero-contactarme.html">Quiero contactarme</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- Cuerpo de la web - Main -->
     <main>
-        <section id="welcome">
-            <h2>Off the beaten path trip / Un viaje fuera de lo común</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt nec purus a semper. Nam finibus ex
-                vel urna auctor, et pellentesque diam rhoncus. Nullam euismod tellus lectus, ut feugiat turpis consequat
-                vitae. </p>
-            <a href="./pages/por-donde-empiezo.html" class="myButton">PLANIFIQUEMOS TU EXPERIENCIA JUNTOS</a>
+        <section id="welcome" class="container">
+            <div class="row row-cols-2">
+                <h2 class="col">Off the beaten path trip / Un viaje fuera de lo común</h2>
+                <p class="col">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt nec purus a
+                    semper. Nam finibus ex
+                    vel urna auctor, et pellentesque diam rhoncus. Nullam euismod tellus lectus, ut feugiat turpis
+                    consequat
+                    vitae. </p>
+                    <div class="col d-grid gap-2 col-6 mx-auto">
+                        <a href="./pages/por-donde-empiezo.html"><button class="btn btn-primary" type="button">PLANIFIQUEMOS TU EXPERIENCIA JUNTOS</button></a>
+                      </div>
+            </div>
         </section>
-        <section id="viajeX3">
-            <div class="secciontittle">
-                <h2>Un viaje se vive 3 veces</h2>
-                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+
+        <section id="viajeX3" class="container">
+            <div class="secciontittle row row-cols-1">
+                <h2 class="col">Un viaje se vive 3 veces</h2>
+                <p class="col">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
                     placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
             </div>
-            <div class="cuadro1">
-                <div class="cuadro2">
+            <div class="cuadro1 row row-cols-4">
+                <div class="cuadro2 col">
                     <h3>Cuando lo soñamos</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis felis convallis, rhoncus leo
                         id, scelerisque purus. Ut auctor gravida nulla. Nam id erat elementum, accumsan dui non,
                         porttitor lorem.</p>
                 </div>
-                <div class="cuadro2">
+                <div class="cuadro2 col">
                     <h3>Cuando lo vivimos</h3>
                     <p>Aliquam vel nibh iaculis, ornare purus sit amet, euismod dui. Cras sed tristique neque.
                         Cras ornare dui lorem, vel rhoncus elit venenatis sit amet. Suspendisse varius massa in
                         gravida commodo.</p>
                 </div>
-                <div class="cuadro2">
+                <div class="cuadro2 col">
                     <h3>Cuando lo recordamos</h3>
                     <p>Vestibulum ultricies erat vitae faucibus vulputate. Sed finibus ipsum eu nibh volutpat, in congue
                         sapien lorem.
@@ -62,16 +96,16 @@
                 </div>
             </div>
         </section>
-        <section id="lugares">
-            <div class="secciontittle">
-                <h2>Nuetsros lugares preferidos</h2>
-                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+        <section id="lugares" class="conteiner">
+            <div class="secciontittle row row-cols-1">
+                <h2 class="col">Nuetsros lugares preferidos</h2>
+                <p class="col">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
                     placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
             </div>
-            <div class="cuadroimg">
-                <div class="marcoimg"><img src="./images/newyork.png" alt=""></div>
-                <div class="marcoimg"><img src="./images/VLA.png" alt=""></div>
-                <div class="marcoimg"><img src="./images/paris.png" alt=""></div>
+            <div class="cuadroimg row row-cols-4">
+                <div class="marcoimg col"><img src="./images/newyork.png" alt=""></div>
+                <div class="marcoimg col" ><img src="./images/VLA.png" alt=""></div>
+                <div class="marcoimg col"><img src="./images/paris.png" alt=""></div>
             </div>
         </section>
     </main>
