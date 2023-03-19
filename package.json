@@ -1,0 +1,13 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "Traveler`s Experience web page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass --watch style/scss/main.scss style/css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": []
+}
