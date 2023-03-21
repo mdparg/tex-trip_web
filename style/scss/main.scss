@@ -1,3 +1,263 @@
-.box {
-    color: blue;
+/* base */
+@import "../scss/base/reset";
+@import "../scss/base/typography";
+
+/* components */
+@import "../scss/components/card";
+
+/* layout */
+@import "../scss/layout/header";
+@import "../scss/layout/navbar";
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+    h2 {
+        margin: 0 0 0 20px;
+    }
+}
+
+/* display: flex; */
+
+#welcome {
+    display: flex;
+    /* height: 100px; */
+    width: auto;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0 20px 0;
+    background-color: white;
+
+    h2 {
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+
+        p {
+            text-align: center;
+        }
+    }
+}
+
+#socialnetwork {
+    /* width: auto; */
+    padding: 30px;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 20px 0 20px 0; */
+    align-content: center;
+    background-color: #f58634;
+}
+
+.cuadrorrss {
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    width: 80%;
+}
+
+#viajeX3 {
+    justify-content: center;
+    background-color: #2e3e5d;
+    color: #3dbda3;
+    padding: 30px;
+}
+
+#lugares {
+    justify-content: center;
+    padding: 30px;
+}
+
+
+.marcoimg {
+    background-color: #cc9f52;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 3px;
+    max-height: 250px;
+
+    img {
+        max-height: 175px;
+        background-color: white;
+    }
+}
+
+
+
+.cuadro1 {
+    img {
+        display: flex;
+        padding: 20px;
+        align-items: stretch;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+}
+
+.myButton {
+    box-shadow: inset 0px 1px 0px 0px #fce2c1;
+    background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+    background-color: #ffc477;
+    border-radius: 6px;
+    border: 1px solid #eeb44f;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #cc9f52;
+    text-align: center;
+
+    &:hover {
+        background: linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+        background-color: #fb9e25;
+    }
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+}
+
+
+#boton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer */
+.icon {
+    width: 50px;
+}
+
+.lugaresind {
+    max-width: 150px;
+}
+
+.cuadroimg {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.secciontittle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+form {
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    div {
+        padding: 10px 0 10px 20px;
+    }
+
+    legend {
+        font-weight: bold;
+    }
+}
+
+.sexo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+p {
+    a {
+        color: black;
+        font-weight: bold;
+    }
+}
+
+.seccion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #2e3e5d;
+    color: #3dbda3;
+    padding: 30px;
+}
+
+.seccionBlanca {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #b80081;
+    color: #ffffff;
+    padding: 30px;
+}
+
+.QuienesSomos {
+    display: flex;
+    margin: 20px 50px 20px 50px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    h2 {
+        margin: 10px;
+    }
+
+    p {
+        margin: 30px;
+    }
+
+    h3 {
+        margin: 30 0 0 30px;
+    }
+
+    h4 {
+        margin: 15px 0 0 40px;
+    }
+}
+
+.steps-to-travel {
+    display: flex;
+    width: 80%;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 50px 0 50px;
+}
+
+.pasos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+
+    h2 {
+        margin: 0 10px 0 0;
+    }
 }
