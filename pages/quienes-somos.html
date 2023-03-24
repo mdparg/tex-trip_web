@@ -1,103 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CDN BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Link Css -->
-    <link rel="stylesheet" href="../css/style0.css">
+    <link rel="stylesheet" href="../style/css/style.css">
     <link rel="icon" type="image/x-icon" href="../images/favicon/favicon.ico">
-    <title>Tex-Trip: Quienes somos</title>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Tex-Trip | Quienes somos</title>
 </head>
 
 <body>
+    <!-- Link JS Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- Scrip para el footer -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+            <title>Bootstrap</title>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+            </path>
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 16 16">
+            <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+        </symbol>
+        <symbol id="instagram" viewBox="0 0 16 16">
+            <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 16 16">
+            <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+        </symbol>
+    </svg>
+    <!-- falta icono de whatsapp -->
+    <!-- Scrip para el footer -->
     <!-- Encabezado -->
     <header>
-        <a href="../index.html"><img class="imglogo" src="../images/logos/textrip-Logo-Azul-Sin-Slogan.png"
-                alt="Tex-Trip: Logo"></a>
-        <nav> <!--HACE REFERENCIA A LA BARRRA DE NAVEGACION-->
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./por-donde-empiezo.html">Por donde empiezo</a></li>
-                <li><a class="aactive" href="./quienes-somos.html">Quienes Somos</a></li>
-                <li><a href="./tips-de-viaje.html">Tips de viaje</a></li>
-                <li><a href="./quiero-contactarme.html">Quiero contactarme</a></li>
-            </ul>
+        <!-- Barra de navegacion -->
+        <nav class="navbar navbar-expand-lg" style="background-color: #3dbda3; color: #2e3e5d;">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/logos/textrip-Logo-Azul-Sin-Slogan.png" alt="Traveler's Experience" width="80">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/por-donde-empiezo.html">Por
+                                donde empiezo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/quienes-somos.html">Quienes
+                                somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/tips-de-viaje.html">Tips de viaje</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/quiero-contactarme.html">Quiero contactarme</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- Cuerpo de la web - Main -->
     <main>
-        <div class="QuienesSomos">
-            <h2>Quienes somos</h2>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum."</p>
-            <h3>Como comenzo esta aventura</h3>
-            <p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
-                demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the
-                pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty
-                through weakness of will, which is the same as saying through shrinking from toil and pain. These cases
-                are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled
-                and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and
-                every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of
-                business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise
-                man therefore always holds in these matters to this principle of selection: he rejects pleasures to
-                secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
-            <h4>El primer viaje</h4>
-            <p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
-                demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the
-                pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty
-                through weakness of will, which is the same as saying through shrinking from toil and pain. These cases
-                are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled
-                and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and
-                every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of
-                business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise
-                man therefore always holds in these matters to this principle of selection: he rejects pleasures to
-                secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
-            <h4>La primera experiencia ayudando a otros</h4>
-            <p>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
-                demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the
-                pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty
-                through weakness of will, which is the same as saying through shrinking from toil and pain. These cases
-                are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled
-                and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and
-                every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of
-                business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise
-                man therefore always holds in these matters to this principle of selection: he rejects pleasures to
-                secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
-            <h3>Donde nos ubicamos</h3>
-            <h4>Mi lugar es el mundo</h4>
-            <p>t is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
-            </p>
-            <h4>Mi corazon esta en donde esta mi gente</h4>
-            <p> opposed to using 'Content here, content here', making it look like readable English. Many desktop
-                publishing packages and web page editors now use Lorem Ipsum as their default model text, an</p>
-        </div>
+        <section>
+            <div class="QuienesSomos">
+                <div class="Container">
+                    <div class="row row-cols-1">
+                        <div class="seccionColor2  animate__animated animate__fadeIn">
+                            <h2 class="fw-bold">Quienes somos</h2>
+                            <p>En "TEX-Trip", somos expertos en la planificación y organización de viajes fuera de lo
+                                común. Nos apasiona descubrir lugares y experiencias únicas y auténticas, alejadas de
+                                las rutas turísticas habituales. Nuestra misión es ofrecer a nuestros clientes la
+                                oportunidad de vivir aventuras inolvidables y descubrir destinos que se salen de lo
+                                convencional.
+
+                                En este sentido, nuestro lema "Off-the-beaten-path-trip" refleja nuestra filosofía de
+                                viaje. Nos esforzamos por ofrecer a nuestros clientes experiencias auténticas y alejadas
+                                de lo convencional, explorando destinos menos conocidos pero igualmente fascinantes. Ya
+                                sea que estén interesados en explorar la naturaleza, sumergirse en la cultura local o
+                                descubrir lugares históricos poco conocidos, en "TEX-Trip" les ayudaremos a encontrar su
+                                propio camino y a disfrutar de un viaje que recordarán para siempre.
+
+                                En definitiva, en "TEX-Trip" somos apasionados viajeros que disfrutan descubriendo
+                                nuevos destinos y creando experiencias únicas para nuestros clientes. Nos enorgullece
+                                ofrecer un enfoque personalizado y flexible para cada uno de nuestros viajes,
+                                garantizando que nuestros clientes disfruten de un viaje hecho a su medida y que se
+                                adapte a sus necesidades y preferencias.</p>
+                        </div>
+                        <div class="seccionColor1  animate__animated animate__fadeInUp">
+                            <h3 class="fw-bolder">Como comenzo esta aventura</h3>
+                            <p>La aventura de organizar "viajes fuera de lo común" comenzó como una respuesta a la
+                                creciente demanda de viajes más auténticos y experiencias de viaje únicas por parte de
+                                los viajeros. Con el tiempo, muchas personas se dieron cuenta de que los destinos
+                                turísticos populares podían ser masivos, costosos y a veces incluso superficiales, lo
+                                que los llevó a buscar alternativas más auténticas y significativas.
+
+                                Algunas personas comenzaron a buscar destinos menos conocidos, a explorar culturas
+                                locales y a descubrir experiencias únicas que no se encuentran en las guías turísticas.
+                                Estos viajeros pioneros comenzaron a compartir sus experiencias y conocimientos con
+                                otros, y pronto surgieron empresas y agencias de viajes especializadas en ofrecer
+                                "viajes fuera de lo común" y experiencias de viaje auténticas.
+
+                                Estos viajes pueden incluir caminatas por senderos poco transitados, visitas a
+                                comunidades rurales, experiencias culinarias locales, entre otras. La idea es ofrecer
+                                experiencias únicas y auténticas que permitan a los viajeros sumergirse en la cultura
+                                local y conectarse con la gente y el medio ambiente de una manera más profunda.
+
+                                Hoy en día, los "viajes fuera de lo común" se han convertido en una tendencia popular en
+                                la industria del turismo y muchos viajeros buscan este tipo de experiencias para
+                                descubrir destinos menos conocidos y vivir experiencias más auténticas."</p>
+                            <h4 class="fw-semibold">El primer viaje</h4>
+                            <p>Nuestro primer viaje a Europa fue una aventura emocionante e inolvidable. Habíamos soñado
+                                con conocer el continente desde hacía años, y finalmente decidimos hacer realidad
+                                nuestro sueño.
+
+                                Comenzamos en París, la ciudad del amor y la luz. Nos maravillamos con la majestuosidad
+                                de la Torre Eiffel y recorrimos los pintorescos barrios de la ciudad. Visitamos el Museo
+                                del Louvre y quedamos impresionados con las obras de arte que habíamos estudiado en
+                                libros.
+
+                                Después de París, viajamos en tren a Ámsterdam, donde alquilamos bicicletas y recorrimos
+                                la ciudad como verdaderos holandeses. Disfrutamos de la arquitectura única de los
+                                canales y los edificios históricos, y nos maravillamos con la belleza de los campos de
+                                tulipanes.
+
+                                Luego viajamos a Berlín, donde aprendimos sobre la historia de la ciudad y visitamos los
+                                lugares más emblemáticos como la Puerta de Brandenburgo y el Muro de Berlín. Probamos la
+                                deliciosa comida local y disfrutamos de la animada vida nocturna de la ciudad.
+
+                                Finalmente, nuestro viaje a Europa terminó en Barcelona, donde nos enamoramos de la
+                                arquitectura modernista de Gaudí y pasamos horas relajándonos en las playas de la
+                                ciudad. También disfrutamos de la deliciosa gastronomía catalana y exploramos los
+                                barrios bohemios y alternativos de la ciudad.
+
+                                En general, nuestro primer viaje a Europa fue una experiencia increíble que nunca
+                                olvidaremos.</p>
+                            <h4 class="fw-semibold">La primera experiencia ayudando a otros</h4>
+                            <p>Nuestra primera experiencia ayudando a nuestra tía a viajar sola a Nueva York fue
+                                emocionante y desafiante al mismo tiempo. Nuestra tía siempre había querido visitar la
+                                ciudad de Nueva York, pero nunca antes había viajado sola. Como éramos viajeros
+                                experimentados, nos pidió ayuda para organizar su viaje y para que le demos algunos
+                                consejos sobre cómo moverse en la ciudad.
+
+                                Primero, nos reunimos con ella para discutir sus intereses y preferencias. Luego,
+                                diseñamos un itinerario personalizado que incluía visitas a los lugares más emblemáticos
+                                de la ciudad como la Estatua de la Libertad, el Central Park y el Empire State Building.
+                                También le recomendamos algunos restaurantes y tiendas locales para que pueda disfrutar
+                                de la gastronomía y la cultura de la ciudad.
+
+                                Antes de su viaje, le proporcionamos un paquete de bienvenida con mapas, guías de viaje
+                                y algunos consejos prácticos. También la ayudamos a reservar su alojamiento y a comprar
+                                sus boletos de transporte público.
+
+                                Durante su viaje, nuestra tía nos mantuvo informados de su progreso y de las cosas que
+                                estaba haciendo. Estábamos contentos de saber que estaba disfrutando de su tiempo en la
+                                ciudad y que estaba aprovechando al máximo su experiencia.
+
+                                Después de que nuestra tía regresó a casa, nos envió una tarjeta de agradecimiento,
+                                agradeciéndonos nuestra ayuda y consejos. Estábamos contentos de saber que habíamos
+                                ayudado a nuestra tía a tener una experiencia única e inolvidable en la ciudad de Nueva
+                                York.</p>
+                        </div>
+                        <div class="seccionColor2 animate__animated animate__fadeInUp">
+                            <h3 class="fw-bolder">Donde nos ubicamos</h3>
+                            <h4 class="fw-semibold">Mi lugar es el mundo</h4>
+                            <p>Nuestro lugar en el mundo es Villa La Angostura, un hermoso destino de montaña ubicado en
+                                la Patagonia argentina. Nos enamoramos de este lugar la primera vez que lo visitamos, y
+                                desde entonces hemos regresado varias veces.
+
+                                Nos encanta la naturaleza y la tranquilidad que se respira en este lugar. Hay muchas
+                                actividades al aire libre para disfrutar, como caminatas por la montaña, pesca en los
+                                lagos cercanos, esquí en invierno y paseos en bicicleta por los senderos de la zona.
+
+                                Además, Villa La Angostura es un lugar muy acogedor, con una comunidad cálida y
+                                amistosa. La ciudad cuenta con excelentes opciones de alojamiento y gastronomía, lo que
+                                lo convierte en un destino ideal para aquellos que buscan un poco de tranquilidad y
+                                descanso.
+
+                                Cada vez que visitamos Villa La Angostura, nos sentimos como en casa y siempre nos
+                                quedamos con ganas de volver. Es un lugar mágico que siempre tendrá un lugar especial en
+                                nuestros corazones.
+                            </p>
+                            <h4 class="fw-semibold">Mi corazon esta en donde esta mi gente</h4>
+                            <p> Para muchas personas, su sentido de pertenencia y felicidad no está en un lugar
+                                específico, sino en las personas que más quieren. Esas personas son las que llenan sus
+                                vidas de amor, alegría, momentos inolvidables, y son ellas las que les hacen sentir
+                                plenos y felices.
+
+                                "Su corazón está donde está su gente" refleja el profundo vínculo que existe entre las
+                                personas que amamos y nuestro sentido de hogar y pertenencia. Ya sea en la ciudad en la
+                                que nacieron, en un lugar de vacaciones o en un país extranjero, lo que realmente
+                                importa es estar cerca de aquellos que les importan.
+
+                                En definitiva, la gente que les rodea es la que hace que la vida valga la pena. Y aunque
+                                puedan disfrutar de lugares hermosos y fascinantes, nada se compara con la sensación de
+                                estar con las personas que más quieren. Así que, en última instancia, esas personas son
+                                las que realmente definen donde está su corazón.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!--Footer pie de pagina-->
     <footer>
         <section id="socialnetwork">
-            <div class="secciontittle">
-                <h2>Seguinos en nuestras redes</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra
-                    nec,
-                    mattis ac neque. Duis ac blandit elit tincidunt id</p>
-            </div>
-            <div class="cuadrorrss">
-                <div id="ig"><a href="https://www.instagram.com/tex_trip/" target="_blank"><img class="icon"
-                            src="../images/icons8-instagram-50.png" alt="Instagram: tex_trip"></a></div>
-                <div id="fb"><a href="https://www.facebook.com/tex_trip/" target="_blank"><img class="icon"
-                            src="../images/icons8-facebook-rodeado-de-círculo-50.png" alt="Facebook: tex_trip">
-                </div></a>
-                <div id="wa"><a href="https://web.whatsapp.com/send?phone=543584122042" target="_blank"><img
-                            class="icon" src="../images/icons8-whatsapp-50.png" alt="WhatsApp: tex_trip"></div></a>
-            </div>
-            <div>
-                <p class="">© 2019-2022 Tex-Trip. Todos los derechos reservados.</p>
-                <p>Creado con ♥ por <a href="www.uxlab.com.ar">UXLAB</a></p>
+            <div class="container">
+                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                    <div class="col-md-4 d-flex align-items-center">
+                        <!-- <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a> !-->
+                        <span class="mb-3 mb-md-0 text-muted">© 2019-2023 Tex-Trip. Creado con ♥ por <a
+                                href="www.uxlab.com.ar">UXLAB</a></span>
+                    </div>
+
+                    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                        <li class="ms-3"><a class="text-muted"
+                                href="https://web.whatsapp.com/send?phone=543584122042"><svg class="bi" width="24"
+                                    height="24">
+                                    <use xlink:href="#twitter"></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/tex_trip/"><svg
+                                    class="bi" width="24" height="24">
+                                    <use xlink:href="#instagram"></use>
+                                </svg></a></li>
+                        <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/tex_trip/"><svg class="bi"
+                                    width="24" height="24">
+                                    <use xlink:href="#facebook"></use>
+                                </svg></a></li>
+                    </ul>
+                </footer>
             </div>
         </section>
     </footer>

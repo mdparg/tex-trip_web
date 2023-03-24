@@ -282,25 +282,7 @@ p a {
     color: #ffffff;
     padding: 30px;
 }
-.QuienesSomos{
-    display: flex;
-    margin: 20px 50px 20px 50px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-.QuienesSomos h2{
-    margin: 10px;
-}
-.QuienesSomos p{
-    margin: 30px;
-}
-.QuienesSomos h3{
-    margin: 30 0 0 30px;
-}
-.QuienesSomos h4{
-    margin: 15px 0 0 40px;
-}
+
 .steps-to-travel{
     display: flex;
     width: 80%;

@@ -8,8 +8,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <!-- Link Css -->
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../style/css/style.css">
   <link rel="icon" type="image/x-icon" href="../images/favicon/favicon.ico">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <title>Tex-Trip Quiero contactarme</title>
 </head>
 
@@ -74,78 +76,81 @@
   </header>
   <!-- Cuerpo de la web - Main -->
   <main>
-
-    <div class="seccion">
-
-      <form class="row g-3 needs-validation" novalidate>
-        <div class="col-md-3">
-          <label for="validationCustom01" class="form-label">Tu nombre</label>
-          <input type="text" class="form-control" id="validationCustom01" value="" required>
-          <div class="valid-feedback">
-            Se ve bien!
+    <section class="seccion">
+      <div class="container">
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-3">
+            <label for="validationCustom01" class="form-label">Tu nombre</label>
+            <input type="text" class="form-control" id="validationCustom01" value="" required>
+            <div class="valid-feedback">
+              Se ve bien!
+            </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <label for="validationCustom02" class="form-label">Tu email</label>
-          <input type="email" class="form-control" id="validationCustom02" value="" required>
-          <div class="valid-feedback">
-            Se ve bien!
+          <div class="col-md-3">
+            <label for="validationCustom02" class="form-label">Tu email</label>
+            <input type="email" class="form-control" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+              Se ve bien!
+            </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <label for="validationCustom02" class="form-label">Tu whatsapp</label>
-          <input type="tel" class="form-control" id="validationCustom02" value="" required>
-          <div class="valid-feedback">
-            Se ve bien!
+          <div class="col-md-3">
+            <label for="validationCustom02" class="form-label">Tu whatsapp</label>
+            <input type="tel" class="form-control" id="validationCustom02" value="" required>
+            <div class="valid-feedback">
+              Se ve bien!
+            </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <label for="validationCustom04" class="form-label">Es tu</label>
-          <select class="form-select" id="validationCustom04" required>
-            <option selected disabled value="">Mi primera experiencia</option>
-            <option>Ya he viajado otras veces</option>
-          </select>
-          <div class="invalid-feedback">
-            Seleccione una opcion
+          <div class="col-md-3">
+            <label for="validationCustom04" class="form-label">Es tu</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Mi primera experiencia</option>
+              <option>Ya he viajado otras veces</option>
+            </select>
+            <div class="invalid-feedback">
+              Seleccione una opcion
+            </div>
           </div>
-        </div>
-        <div class="col-3">
-          <button class="btn btn-warning" type="submit">Enviar</button>
-        </div>
-      </form>
+          <div class="col-3">
+            <button class="btn btn-warning" type="submit">Enviar</button>
+          </div>
+        </form>
 
 
 
-    </div>
+      </div>
+    </section>
   </main>
-      <!--Footer pie de pagina-->
-      <section id="socialnetwork">
-        <div class="container">
-          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center">
-              <!-- <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+  <!--Footer pie de pagina-->
+  <section id="socialnetwork">
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <!-- <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
                 <svg class="bi" width="30" height="24">
                   <use xlink:href="#bootstrap"></use>
                 </svg>
               </a> !-->
-              <span class="mb-3 mb-md-0 text-muted">© 2019-2023 Tex-Trip. Creado con ♥ por <a
-                  href="www.uxlab.com.ar">UXLAB</a></span>
-            </div>
-      
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-              <li class="ms-3"><a class="text-muted" href="https://web.whatsapp.com/send?phone=543584122042"><svg class="bi" width="24" height="24">
-                    <use xlink:href="#twitter"></use>
-                  </svg></a></li>
-              <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/tex_trip/"><svg class="bi" width="24" height="24">
-                    <use xlink:href="#instagram"></use>
-                  </svg></a></li>
-              <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/tex_trip/"><svg class="bi" width="24" height="24">
-                    <use xlink:href="#facebook"></use>
-                  </svg></a></li>
-            </ul>
-          </footer>
+          <span class="mb-3 mb-md-0 text-muted">© 2019-2023 Tex-Trip. Creado con ♥ por <a
+              href="www.uxlab.com.ar">UXLAB</a></span>
         </div>
-      </section>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" href="https://web.whatsapp.com/send?phone=543584122042"><svg class="bi"
+                width="24" height="24">
+                <use xlink:href="#twitter"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/tex_trip/"><svg class="bi" width="24"
+                height="24">
+                <use xlink:href="#instagram"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/tex_trip/"><svg class="bi" width="24"
+                height="24">
+                <use xlink:href="#facebook"></use>
+              </svg></a></li>
+        </ul>
+      </footer>
+    </div>
+  </section>
 </body>
 
 </html>
