@@ -1,2 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Covered+By+Your+Grace&family=Fredoka+One&display=swap');
+
+@font-face {
+    font-family: 'Tex-Titulo';
+    src: url("fonts/juice_it_up/Juice-it-up.ttf") format("truetype"),
+        url("fonts/juice_it_up/Juice-it-up.otf") format("otf"),
+        url("fonts/juice_it_up/Juice-it-up-Italic.ttf") format("truetype"),
+        url("fonts/juice_it_up/Juice-it-up-Italic.otf") format("otf");
+}
+
+
+@font-face {
+    font-family: 'Tex-Slogan';
+    src: url("/fonts/JustTheWayYouAre_0.ttf") format("truetype");
+}

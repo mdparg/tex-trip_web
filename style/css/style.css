@@ -1,11 +1,16 @@
 /* base */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Covered+By+Your+Grace&family=Fredoka+One&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-} /* components */
+@imrrport "../scss/base/reset";
+@font-face {
+  font-family: "Tex-Titulo";
+  src: url("fonts/juice_it_up/Juice-it-up.ttf") format("truetype"), url("fonts/juice_it_up/Juice-it-up.otf") format("otf"), url("fonts/juice_it_up/Juice-it-up-Italic.ttf") format("truetype"), url("fonts/juice_it_up/Juice-it-up-Italic.otf") format("otf");
+}
+@font-face {
+  font-family: "Tex-Slogan";
+  src: url("/fonts/JustTheWayYouAre_0.ttf") format("truetype");
+}
+/* components */
 .cuadro1 {
   display: flex;
   padding: 20px;
@@ -65,6 +70,7 @@ main h2 {
   padding: 30px;
   margin: 20px 0 20px 0;
   background-color: white;
+  color: #2e3e5f;
 }
 .welcome h2 {
   font-family: "Josefin Sans", sans-serif;
@@ -75,7 +81,7 @@ main h2 {
 }
 
 .viajeX3 {
-  background-color: #2e3e5d;
+  background-color: #2e3e5f;
   color: #3dbda3;
   padding: 30px;
 }
