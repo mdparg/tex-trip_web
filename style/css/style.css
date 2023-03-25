@@ -4,7 +4,10 @@
 @imrrport "../scss/base/reset";
 @font-face {
   font-family: "Tex-Titulo";
-  src: url("fonts/juice_it_up/Juice-it-up.ttf") format("truetype"), url("fonts/juice_it_up/Juice-it-up.otf") format("otf"), url("fonts/juice_it_up/Juice-it-up-Italic.ttf") format("truetype"), url("fonts/juice_it_up/Juice-it-up-Italic.otf") format("otf");
+  src: url("fonts/juice_it_up/Juice-it-up.ttf") format("truetype"),
+    url("fonts/juice_it_up/Juice-it-up.otf") format("otf"),
+    url("fonts/juice_it_up/Juice-it-up-Italic.ttf") format("truetype"),
+    url("fonts/juice_it_up/Juice-it-up-Italic.otf") format("otf");
 }
 @font-face {
   font-family: "Tex-Slogan";

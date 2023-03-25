@@ -1,31 +1,30 @@
-
 .cuadro1 {
-    display: flex;
-    padding: 20px;
-    align-items: stretch;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+  display: flex;
+  padding: 20px;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: nowrap;
 }
 
 .cuadro1 div {
-    padding: 10px;
-    margin: 10px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .cuadro1 div h3 {
-    margin: 3px 0 3px 0;
-    text-align: center;
+  margin: 3px 0 3px 0;
+  text-align: center;
 }
 
 .cuadro1 div p {
-    text-align: center;
+  text-align: center;
 }
 
 .cuadro2 {
-    color: #2e3e5d;
-    background-color: cornflowerblue;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 3px;
-    max-height: 250px;
+  color: #2e3e5d;
+  background-color: cornflowerblue;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 3px;
+  max-height: 250px;
 }
