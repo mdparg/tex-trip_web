@@ -18,7 +18,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Tex-Trip Quiero contactarme</title>
+    <title>Tex-Trip | Quiero contactarme</title>
+    <!-- ETIQUETAS SEO -->
+    <meta
+      name="description"
+      content="Tex-Trip es una empresa de planificación de viajes personalizados que te ofrece experiencias únicas y fuera de lo común. ¡Planifica tu viaje ahora con Tex-Trip y disfruta de una experiencia inolvidable!"
+    />
+    <meta
+      name="keywords"
+      content="planificación de viajes, cruceros, planificación de viajes personalizados, planificación de itinerarios, organización de viajes, reservas de viajes, paquetes de viajes, rutas turísticas, destinos turísticos, guías de viaje, viajes a medida, viajes personalizados, viajes exclusivos, viajes de lujo, viajes temáticos, viajes de aventura, viajes culturales, experiencias de viaje únicas, viajes boutique, viajes VIP, alojamiento, hoteles, hostales, departamentos, habitaciones, tours, vuelos, itinerarios de viaje, transporte turístico, reservas de hotel, reservas de vuelos, agencias de viajes, turismo, turismo sostenible, turismo gastronómico, turismo cultural, turismo rural, LGTB, turismo LGTB, destinos LGTB-friendly, viajes para parejas del mismo sexo, viajes para personas solas, viajes de grupo de amigos, viajes para solos y solas"
+    />
+    <meta name="author" content="UXLAB" />
   </head>
 
   <body>
@@ -117,7 +127,7 @@
     <main>
       <section class="seccion">
         <div class="container">
-          <form class="row g-3 needs-validation" novalidate>
+          <form class="row g-3 needs-validation" novalidate  action="./php/contacto.php">
             <div class="col-md-3">
               <label for="validationCustom01" class="form-label"
                 >Tu nombre</label
@@ -125,7 +135,7 @@
               <input
                 type="text"
                 class="form-control"
-                id="validationCustom01"
+                id="nombre"
                 value=""
                 required
               />
@@ -138,7 +148,7 @@
               <input
                 type="email"
                 class="form-control"
-                id="validationCustom02"
+                id="email"
                 value=""
                 required
               />
@@ -146,12 +156,12 @@
             </div>
             <div class="col-md-3">
               <label for="validationCustom02" class="form-label"
-                >Tu whatsapp</label
+                >Tu WhatsApp</label
               >
               <input
                 type="tel"
                 class="form-control"
-                id="validationCustom02"
+                id="whatsapp"
                 value=""
                 required
               />
@@ -159,13 +169,13 @@
             </div>
             <div class="col-md-3">
               <label for="validationCustom04" class="form-label">Es tu</label>
-              <select class="form-select" id="validationCustom04" required>
+              <select class="form-select" id="experiencia" required>
                 <option selected disabled value="">
                   Mi primera experiencia
                 </option>
                 <option>Ya he viajado otras veces</option>
               </select>
-              <div class="invalid-feedback">Seleccione una opcion</div>
+              <div class="invalid-feedback">Seleccione una opción</div>
             </div>
             <div class="col-3">
               <button class="btn btn-warning" type="submit">Enviar</button>
