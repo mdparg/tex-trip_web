@@ -1,0 +1,27 @@
+form {
+    /* display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  
+    div {
+      padding: 10px 0 10px 20px;
+    }
+  
+    legend {
+      font-weight: bold;
+    }
+  }
+  
+  .sexo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }

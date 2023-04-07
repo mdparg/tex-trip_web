@@ -1,0 +1,22 @@
+// Paleta de colores
+$color-primary: #47c0b1;
+$color-secondary: #f48434;
+$color-accent: #48808c;
+$color-background: #2b3b53;
+$color-text: #fff;
+
+// Estilos de sección
+.section-1 {
+  background-color: $color-primary;
+  color: $color-text;
+}
+
+.section-2 {
+  background-color: $color-background;
+  color: $color-accent;
+}
+
+.section-3 {
+  background-color: $color-secondary;
+  color: $color-text;
+}

@@ -1,19 +1,24 @@
+@charset "UTF-8";
 /* base */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Covered+By+Your+Grace&family=Fredoka+One&display=swap");
-@imrrport "../scss/base/reset";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Tex-Titulo";
-  src: url("fonts/juice_it_up/Juice-it-up.ttf") format("truetype"),
-    url("fonts/juice_it_up/Juice-it-up.otf") format("otf"),
-    url("fonts/juice_it_up/Juice-it-up-Italic.ttf") format("truetype"),
-    url("fonts/juice_it_up/Juice-it-up-Italic.otf") format("otf");
+  src: url("fonts/juice_it_up/Juice-it-up.ttf") format("truetype"), url("fonts/juice_it_up/Juice-it-up.otf") format("otf"), url("fonts/juice_it_up/Juice-it-up-Italic.ttf") format("truetype"), url("fonts/juice_it_up/Juice-it-up-Italic.otf") format("otf");
 }
 @font-face {
   font-family: "Tex-Slogan";
   src: url("/fonts/JustTheWayYouAre_0.ttf") format("truetype");
 }
-/* components */
+/*Azul*/
+/*Verde*/
+/*Naranja*/ /* components */
 .cuadro1 {
   display: flex;
   padding: 20px;
@@ -45,53 +50,76 @@
   max-height: 250px;
 }
 
-/* layout */
-nav ul {
-  /* quitar bullets */
-  align-items: center;
-  justify-content: space-around;
-  width: 90%;
-}
-
-* {
-  padding: 0;
+/* Estilos generales */
+h2, p {
   margin: 0;
-  box-sizing: border-box;
+  padding: 20px;
+  color: #fff;
 }
 
-body {
-  font-family: "Ubuntu", sans-serif;
+/* Estilos de la sección 1 */
+.section-1 {
+  width: 100%;
+  min-height: 300px;
+  padding: 10px 0px 30px 0px;
+  background-color: #2B3B53;
+}
+.section-1 h2 {
+  background-color: #47C0B1;
 }
 
-main h2 {
-  margin: 0 0 0 20px;
+/* Estilos de la sección 2 */
+.section-2 {
+  width: 100%;
+  min-height: 400px;
+  padding: 10px 0px 30px 0px;
+  background-color: #47C0B1;
+}
+.section-2 h2 {
+  background-color: #F48434;
 }
 
-/* display: flex; */
-.welcome {
-  width: auto;
-  padding: 30px;
-  margin: 20px 0 20px 0;
-  background-color: white;
-  color: #2e3e5f;
+/* Estilos de la sección 3 */
+.section-3 {
+  width: 100%;
+  min-height: 500px;
+  padding: 10px 0px 30px 0px;
+  background-color: #F48434;
 }
-.welcome h2 {
-  font-family: "Josefin Sans", sans-serif;
-  text-align: center;
-}
-.welcome h2 p {
-  text-align: center;
+.section-3 h2 {
+  background-color: #48808C;
 }
 
-.viajeX3 {
-  background-color: #2e3e5f;
-  color: #3dbda3;
-  padding: 30px;
+/* Estilos de la sección 4 */
+.section-4 {
+  width: 100%;
+  min-height: 600px;
+  background-color: #b80081;
+  padding: 10px 0px 30px 0px;
+}
+.section-4 h2 {
+  background-color: #48808C;
 }
 
-.lugares {
-  background-color: white;
-  padding: 30px;
+.section-5 {
+  width: 100%;
+  min-height: 55dvh;
+  background-color: #48808C;
+  padding: 10px 0px 30px 0px;
+}
+.section-5 h2 {
+  background-color: #b80081;
+}
+
+.portada {
+  height: 70vh;
+  width: 100%;
+  position: relative;
+}
+.portada img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .myButton {
@@ -120,30 +148,76 @@ main h2 {
   top: 1px;
 }
 
-form {
-  /* display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center; */
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-form div {
-  padding: 10px 0 10px 20px;
-}
-form legend {
-  font-weight: bold;
+.btntex {
+  background-color: #F48434;
+  color: #48808C;
 }
 
-.sexo {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+.tex-carrusel {
+  max-width: 800px;
+  max-height: 400px;
+  text-align: center;
+}
+
+/* layout */
+nav ul {
+  /* quitar bullets */
   align-items: center;
+  justify-content: space-around;
+  width: 90%;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+main h2 {
+  margin: 0 0 0 20px;
+}
+
+.seccionColor1 {
+  background-color: #47c0b1;
+  color: #fff;
+  padding: 50px 50px 50px 50px;
+}
+
+.seccionColor2 {
+  background-color: #2b3b53;
+  color: #48808c;
+}
+
+.seccionColor3 {
+  background-color: #f48434;
+  color: #ffffff;
+  padding: 50px 50px 50px 50px;
+}
+
+.seccionColor4 {
+  background-color: #b80081;
+  color: #ffffff;
+  padding: 50px 50px 50px 50px;
+}
+
+.seccionBlanca {
+  background-color: white;
+  color: black;
+  padding: 50px 50px 50px 50px;
+}
+
+.viajeX3 {
+  background-color: #000000;
+  color: #3dbda3;
+  padding: 30px;
+}
+
+.lugares {
+  background-color: white;
+  padding: 30px;
+}
+
+.bg-naranja {
+  background-color: #F48434;
+  color: #48808C;
 }
 
 p a {
@@ -151,6 +225,7 @@ p a {
   font-weight: bold;
 }
 
+/* PAGINA QUIENES SOMOS*/
 .QuienesSomos {
   display: flex;
   margin: 20px 50px 20px 50px;
@@ -194,25 +269,6 @@ p a {
   margin: 0 10px 0 0;
 }
 
-.steps-to-travel {
-  width: 80%;
-  margin: 0 50px 0 50px;
-}
-
-.pasos {
-  width: 100%;
-  margin-top: 20px;
-}
-.pasos h2 {
-  margin: 0 10px 0 0;
-}
-
-.seccion {
-  background-color: #2e3e5d;
-  color: #3dbda3;
-  padding: 30px;
-}
-
 .QuienesSomos {
   margin: 0px 0px 0px 0px;
 }
@@ -228,16 +284,6 @@ p a {
 }
 .QuienesSomos h4 {
   margin: 15px 0 0 40px;
-}
-.QuienesSomos .seccionColor1 {
-  background-color: #2e3e5d;
-  color: #3dbda3;
-  padding: 50px 50px 50px 50px;
-}
-.QuienesSomos .seccionColor2 {
-  background-color: #b80081;
-  color: #ffffff;
-  padding: 50px 50px 50px 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

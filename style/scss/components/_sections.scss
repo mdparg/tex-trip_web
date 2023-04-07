@@ -1,0 +1,99 @@
+/* Estilos generales */
+// body {
+//     margin: 0;
+//     padding: 0;
+//   }
+
+  h2, p {
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+  }
+
+  /* Estilos de la sección 1 */
+  .section-1 {
+    width: 100%;
+    // height: 300px;
+    min-height: 300px;
+    padding: 10px 0px 30px 0px;
+    background-color: #2B3B53;
+
+    h2 {
+      background-color: #47C0B1;
+    }
+    h4 {
+      padding-top: 15px;
+    }
+  }
+
+  /* Estilos de la sección 2 */
+  .section-2 {
+    width: 100%;
+    // height: 400px;
+    min-height: 400px;
+    padding: 10px 0px 30px 0px;
+    background-color: #47C0B1;
+
+    h2 {
+      background-color: #F48434;
+    }
+    h4 {
+      padding-top: 15px;
+    }    
+  }
+
+  /* Estilos de la sección 3 */
+  .section-3 {
+    width: 100%;
+    // height: 500px;
+    min-height: 500px;
+    padding: 10px 0px 30px 0px;
+    background-color: #F48434;
+
+    h2 {
+      background-color: #48808C;
+    }
+    h4 {
+      padding: 45px 0 0 0;
+    }    
+  }
+
+/* Estilos de la sección 4 */
+.section-4 {
+    width: 100%;
+    min-height: 600px;
+    background-color: #b80081;
+    padding: 10px 0px 30px 0px;
+    h2 {
+    //   background-color: #2B3B53;
+      background-color: #48808C;
+    }
+    h4 {
+      padding-top: 15px;
+    }
+  }
+  .section-5 {
+    width: 100%;
+    min-height: 55dvh;
+    background-color: #48808C;
+    padding: 10px 0px 30px 0px;
+    h2 {
+    //   background-color: #2B3B53;
+      background-color: #b80081;
+    }
+    h4 {
+      padding-top: 15px;
+    }
+  }
+ 
+  .portada {
+    height: 70vh; // Altura de la portada igual al 100% del viewport
+    width: 100%; // Ancho de la portada igual al 100% del viewport
+    position: relative; // Para posicionar el contenido dentro de la portada
+    img {
+      height: 100%; // Altura de la imagen igual al 100% de la portada
+      width: 100%; // Ancho de la imagen igual al 100% de la portada
+      object-fit: cover; // Para ajustar la imagen al tamaño de la portada sin deformarla
+    }
+  }
+  

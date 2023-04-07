@@ -1,375 +1,292 @@
 <!DOCTYPE html>
 <!--LENGUAJE ESPAÑOL-->
 <html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link CDN BootStrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <!-- Link Css -->
+  <link rel="stylesheet" href="./style/css/style.css" />
+  <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico" />
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- ETIQUETAS SEO -->
+  <title>Tex-Trip | Off-the-beaten-path-trip / Un viaje fuera de lo común</title>
+  <meta name="description"
+    content="Tex-Trip es una empresa de planificación de viajes personalizados que te ofrece experiencias únicas y fuera de lo común. ¡Planifica tu viaje ahora con Tex-Trip y disfruta de una experiencia inolvidable!">
+  <meta name="keywords"
+    content="planificación de viajes, cruceros, planificación de viajes personalizados, planificación de itinerarios, organización de viajes, reservas de viajes, paquetes de viajes, rutas turísticas, destinos turísticos, guías de viaje, viajes a medida, viajes personalizados, viajes exclusivos, viajes de lujo, viajes temáticos, viajes de aventura, viajes culturales, experiencias de viaje únicas, viajes boutique, viajes VIP, alojamiento, hoteles, hostales, departamentos, habitaciones, tours, vuelos, itinerarios de viaje, transporte turístico, reservas de hotel, reservas de vuelos, agencias de viajes, turismo, turismo sostenible, turismo gastronómico, turismo cultural, turismo rural, LGTB, turismo LGTB, destinos LGTB-friendly, viajes para parejas del mismo sexo, viajes para personas solas, viajes de grupo de amigos, viajes para solos y solas">
+  <meta name="author" content="UXLAB">
+</head>
+
+<body>
+  <!-- Link JS Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap SVG -->
+  <!-- Scrip para el footer -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+    <symbol id="bootstrap" viewBox="0 0 118 94">
+      <title>Bootstrap</title>
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+      </path>
+    </symbol>
+    <symbol id="facebook" viewBox="0 0 16 16">
+      <path
+        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+    </symbol>
+    <symbol id="instagram" viewBox="0 0 16 16">
+      <path
+        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+    </symbol>
+    <symbol id="twitter" viewBox="0 0 16 16">
+      <path
+        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+    </symbol>
+  </svg>
+  <!-- falta icono de WhatsApp -->
+  <!-- Scrip para el footer -->
+
+  <!-- Encabezado -->
+
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Link CDN BootStrap-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <!-- Link Css -->
-    <link rel="stylesheet" href="./style/css/style.css" />
-    <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico" />
-    <!-- Animate CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <!-- ETIQUETAS SEO -->
-    <title>Tex-Trip | Off-the-beaten-path-trip / Un viaje fuera de lo común</title>
-    <meta name="description" content="Tex-Trip es una empresa de planificación de viajes personalizados que te ofrece experiencias únicas y fuera de lo común. ¡Planifica tu viaje ahora con Tex-Trip y disfruta de una experiencia inolvidable!">
-    <meta name="keywords" content="planificación de viajes, cruceros, planificación de viajes personalizados, planificación de itinerarios, organización de viajes, reservas de viajes, paquetes de viajes, rutas turísticas, destinos turísticos, guías de viaje, viajes a medida, viajes personalizados, viajes exclusivos, viajes de lujo, viajes temáticos, viajes de aventura, viajes culturales, experiencias de viaje únicas, viajes boutique, viajes VIP, alojamiento, hoteles, hostales, departamentos, habitaciones, tours, vuelos, itinerarios de viaje, transporte turístico, reservas de hotel, reservas de vuelos, agencias de viajes, turismo, turismo sostenible, turismo gastronómico, turismo cultural, turismo rural, LGTB, turismo LGTB, destinos LGTB-friendly, viajes para parejas del mismo sexo, viajes para personas solas, viajes de grupo de amigos, viajes para solos y solas">
-    <meta name="author" content="UXLAB">
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #3dbda3; color: #2e3e5d">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="./images/logos/textrip-Logo-Azul-Sin-Slogan.png" alt="Traveler's Experience" width="80" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/por-donde-empiezo.html">Por donde empiezo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/quienes-somos.html">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/tips-de-viaje.html">Tips de viaje</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/quiero-contactarme.html">Quiero contactarme</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </head>
-
-  <body>
-    <!-- Link JS Bootstrap-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Bootstrap SVG -->
-    <!-- Scrip para el footer -->
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-      <symbol id="bootstrap" viewBox="0 0 118 94">
-        <title>Bootstrap</title>
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
-        ></path>
-      </symbol>
-      <symbol id="facebook" viewBox="0 0 16 16">
-        <path
-          d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-        />
-      </symbol>
-      <symbol id="instagram" viewBox="0 0 16 16">
-        <path
-          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-        />
-      </symbol>
-      <symbol id="twitter" viewBox="0 0 16 16">
-        <path
-          d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-        />
-      </symbol>
-    </svg>
-    <!-- falta icono de WhatsApp -->
-    <!-- Scrip para el footer -->
-
-    <!-- Encabezado -->
-
-    <head>
-      <!-- Barra de navegación -->
-      <nav
-        class="navbar navbar-expand-lg"
-        style="background-color: #3dbda3; color: #2e3e5d"
-      >
-        <div class="container">
-          <a class="navbar-brand" href="../index.html">
-            <img
-              src="./images/logos/textrip-Logo-Azul-Sin-Slogan.png"
-              alt="Traveler's Experience"
-              width="80"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/por-donde-empiezo.html"
-                  >Por donde empiezo</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/quienes-somos.html"
-                  >Quienes somos</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/tips-de-viaje.html"
-                  >Tips de viaje</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/quiero-contactarme.html"
-                  >Quiero contactarme</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </head>
-    <!-- Cuerpo de la web - Main -->
-    <main>
-      <section Class="welcome">
-        <div class="container">
-          <div class="row row-cols-1 text-center">
-            <div class="col">
-              <h2 class="animate__animated animate__pulse">
-                Off the beaten path trip / Un viaje fuera de lo común
-              </h2>
-              <p>
-                Un viaje en el que se exploran lugares que no son comúnmente
-                visitados por turistas, es decir, lugares que están fuera de las
-                rutas turísticas habituales. Este tipo de viaje suele implicar
-                una mayor aventura y exploración, ya que los destinos pueden ser
-                menos conocidos y requerir más esfuerzo para llegar.
-              </p>
-              <p>
-                Un viaje que se realiza fuera de los circuitos turísticos
-                habituales. Es decir, es un viaje en el que se exploran destinos
-                poco conocidos y alejados de las zonas turísticas más populares.
-                "viaje fuera de lo común". Un viaje fuera de lo común puede
-                implicar un mayor esfuerzo y aventura para llegar a los
-                destinos, ya que pueden ser menos accesibles o requerir viajar
-                por carreteras menos transitadas. Sin embargo, también puede
-                ofrecer experiencias únicas y auténticas, como conocer culturas
-                y lugares que no han sido afectados por el turismo masivo. Este
-                tipo de viaje puede ser una excelente opción para aquellos que
-                buscan escapar de las multitudes y sumergirse en la naturaleza,
-                la cultura y la autenticidad de un lugar. Además, puede ser una
-                forma de apoyar a las comunidades locales y fomentar el turismo
-                sostenible y responsable.
-              </p>
-            </div>
-            <div class="col">
-              <a href="./pages/por-donde-empiezo.html" class="btn btn-primary"
-                >PLANIFIQUEMOS TU EXPERIENCIA JUNTOS</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section Class="viajeX3">
-        <div class="container text-center">
-          <div class="row row-cols-1">
-            <h2
-              class="animate__animated animate__bounce animate__infinite infinite"
-            >
-              "Un viaje se vive tres veces"
+  <!-- Cuerpo de la web - Main -->
+  <main>
+    <!-- SECCIÓN BIENVENIDA -->
+    <section Class="section-5">
+      <div class="container">
+        <!-- <div class="row row-cols-1 text-center">
+          <h2 class="fs-2 fw-semibold">Off the beaten path trip</h2>
+          <p class="fs-5 fw-medium">Un viaje fuera de lo común</p>          
+          </h2>
+        </div> -->
+        <!-- <div class="row justify-content-center align-items-start"> -->
+          <div class="row row-cols-1 text-center rounded mx-auto d-block">
+          <div class="col-md-12 text-center">
+            <h2 class="fw-bold">
+              Off the beaten path trip
             </h2>
-            <p>
+            <p class="fw-lighter fs-3">
+              Un viaje fuera de lo común
+            </p>
+          </div>
+        </div>        
+        <div class="row row-cols-1 text-center rounded mx-auto d-block">
+          <div class="portada">
+            <img src="./images/woman-sit-edge-cliff-waterfall.jpg" alt="Descripción de la imagen">
+          </div>
+        </div>
+        <div class="row row-cols-1 text-center">
+          <div class="row row-cols-1 text-center text-truncate">
+            <p class=" text-truncate">
+              Viajar fuera de lo común, explorando destinos menos conocidos y auténticos, que pueden requerir más esfuerzo y ofrecer experiencias únicas.
+            </p>
+          </div>
+          <div class="col">
+            <a href="./pages/por-donde-empiezo.html" class="btn btn-warning">Planifiquemos tu experiencia juntos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCIÓN DE VIAJE X 3 -->
+    <section id="suenios" class="section-1">
+      <div class="container">
+        <div class="row justify-content-center align-items-start">
+          <div class="col-md-12 text-center">
+            <h2 class="fw-bold">
+              Un viaje se vive tres veces
+            </h2>
+            <p class="fw-lighter">
               La experiencia de viajar esta representada en cada parte de la
               frase. Cada una representa una etapa del viaje y la forma en que
               lo experimentamos
             </p>
           </div>
-          <div class="row row-cols-1 row-cols-md-3">
-            <div class="col">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Cuando lo soñamos</h5>
-                  <p class="card-text">
-                    Esta etapa se refiere a la planificación y anticipación del
-                    viaje. Antes de emprender un viaje, soñamos y imaginamos
-                    cómo será, investigamos los destinos que queremos visitar,
-                    hacemos planes y nos emocionamos por la aventura que está
-                    por venir. En esta etapa, nuestro viaje todavía es una idea,
-                    pero está llena de emoción y anticipación.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Cuando lo vivimos</h5>
-                  <p class="card-text">
-                    Esta es la etapa del viaje en la que lo experimentamos
-                    realmente. Viajamos a nuestro destino, exploramos nuevos
-                    lugares, experimentamos nuevas culturas, probamos nuevas
-                    comidas y creamos recuerdos inolvidables. Durante esta
-                    etapa, estamos completamente inmersos en la experiencia del
-                    viaje y todo lo que viene con ella.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Cuando lo recordamos</h5>
-                  <p class="card-text">
-                    Después de que el viaje ha terminado y hemos regresado a
-                    casa, podemos reflexionar sobre nuestra experiencia y
-                    recordarla con cariño. Esta etapa se refiere a la forma en
-                    que recordamos y revivimos los momentos del viaje.
-                    Recordamos las vistas, los sonidos, las personas que
-                    conocimos y las experiencias que tuvimos, y nos hace sentir
-                    una mezcla de emociones que van desde la nostalgia hasta la
-                    felicidad y la satisfacción.
-                  </p>
-                </div>
+        </div>
+        <div class="row justify-content-center align-items-start">
+          <div class="col-md-4">
+            <div class="card text-white bg-naranja mb-3">
+              <h5 class="card-header fw-bold">Cuando lo soñamos</h5>
+              <img src="./images/woman-dreaming.png" class="card-img-top" alt="Viajero en montenegro" />
+              <div class="card-body">
+                <!-- <h5 class="card-title">Cuando lo vivimos</h5> -->
+                <p class="card-text">
+                  Antes de emprender un viaje, soñamos y imaginamos cómo
+                  será, investigamos los destinos que queremos visitar, hacemos
+                  planes y nos emocionamos por la aventura que está por venir.
+                </p>
+                <a href="#" class="btn btn-secondary">Ver mas</a>
               </div>
             </div>
           </div>
-          <div class="row row-cols-1">
-            <p>
-              Un viaje no solo se trata de la experiencia en sí misma, sino que
-              también incluye la emoción y la anticipación que sentimos al
-              planificarlo y la forma en que lo recordamos y revivimos en
-              nuestra memoria.
-            </p>
+          <div class="col-md-4">
+            <div class="card text-white bg-naranja mb-3">
+              <h5 class="card-header fw-bold">Cuando lo vivimos</h5>
+              <img src="./images/man-traveling-alone-montenegro.jpg" class="card-img-top" alt="Viajero en montenegro" />
+              <div class="card-body">
+                <!-- <h5 class="card-title">Cuando lo vivimos</h5> -->
+                <p class="card-text">
+                  Viajamos a nuestro destino, exploramos nuevos
+                  lugares, experimentamos nuevas culturas, probamos nuevas
+                  comidas y creamos recuerdos inolvidables.
+                </p>
+                <a href="#" class="btn btn-dark">Ver mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-white bg-naranja mb-3">
+              <h5 class="card-header fw-bold">Cuando lo recordamos</h5>
+              <img src="./images/woman-creating-inspiring-vision-board-high-angle.jpg" class="card-img-top"
+                alt="Viajero en montenegro" />
+              <div class="card-body">
+                <!-- <h5 class="card-title">Cuando lo vivimos</h5> -->
+                <p class="card-text">
+                  Después de que el viaje recordamos las vistas, los sonidos, las personas que
+                  conocimos y las experiencias que tuvimos, y nos hace sentir
+                  una mezcla de emociones que van desde la nostalgia hasta la
+                  felicidad y la satisfacción.
+                </p>
+                <a href="#" class="btn btn-light">Ver mas</a>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <!-- SECCIÓN NUESTROS LUGARES -->
+    <section Class="section-4">
+      <div class="container">
+        <div class="row justify-content-center align-items-start">
+          <div class="col-md-12">
+            <div class="col-md-12 text-center">
+              <h2 class="fw-bold">
+                Nuestros lugares preferidos
+              </h2>
+              <p class="fw-lighter">Para algunas personas, un lugar para viajar puede ser una ciudad
+                vibrante y llena de vida, mientras que para otras puede ser una
+                zona rural tranquila y pacífica. En última instancia, un lugar
+                preferido para viajar depende de los intereses y preferencias
+                individuales de cada persona.</p>
+            </div>
+          </div>
 
-      <section Class="lugares">
-        <div class="container text-center">
-          <div class="row row-cols-1">
-            <h2 class="animate__animated animate__shakeX">
-              Nuestros lugares preferidos
-            </h2>
-            <p>
-              Un lugar preferido para viajar es un destino que una persona elige
-              para visitar debido a sus intereses y preferencias personales.
-              Tiene características que te atraen, como su belleza natural, su
-              cultura, su historia, su gastronomía y sus actividades al aire
-              libre.
-            </p>
-            <p>
-              Para algunas personas, un lugar para viajar puede ser una ciudad
-              vibrante y llena de vida, mientras que para otras puede ser una
-              zona rural tranquila y pacífica. En última instancia, un lugar
-              preferido para viajar depende de los intereses y preferencias
-              individuales de cada persona.
-            </p>
-          </div>
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card">
-                <img
-                  src="./images/newyork.png"
-                  class="card-img-top"
-                  alt="..."
-                />
+          <div class="row justify-content-center align-items-start">
+            <div class="col-md-4">
+              <div class="card text-white bg-naranja mb-3">
+                <img src="./images/lago-espejo.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title">New York</h5>
+                  <h5 class="card-title fw-bold">Villa La Angostura</h5>
                   <p class="card-text">
-                    Nueva York incluye 5 distritos que se ubican donde el río
-                    Hudson desemboca en el océano Atlántico. En su centro se
-                    encuentra Manhattan, un distrito densamente poblado que se
-                    encuentra entre los principales centros comerciales,
-                    financieros y culturales del mundo. Sus sitios icónicos
-                    incluyen rascacielos, como el Empire State Building, y el
-                    amplio Central Park. El teatro Broadway se ubica en la zona
-                    del Times Square iluminada con neones.
+                    Villa La Angostura es mi lugar preferido gracias a su belleza natural, lagos,
+                    montañas, gastronomía y ambiente cálido. Una experiencia inolvidable.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card">
-                <img src="./images/VLA.png" class="card-img-top" alt="..." />
+            <div class="col-md-4">
+              <div class="card text-white bg-naranja mb-3">
+                <img src="./images/costa-rica-beach.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title">Villa La Angostura</h5>
-                  <p class="card-text">
-                    Villa La Angostura es una ciudad turística en el lago Nahuel
-                    Huapi de la Patagonia argentina. Es conocida por sus
-                    edificios de madera de estilo alpino. El Parque Nacional
-                    Nahuel Huapi circundante tiene montañas andinas, lagos y
-                    bosques. Cerca está el Parque Nacional Los Arrayanes que
-                    alberga esta especie de árbol hace siglos. Las pistas de
-                    esquí del cerro Bayo se encuentran justo afuera de la
-                    ciudad. El camino Siete Lagos serpentea al norte hacia la
-                    ciudad de San Martín de los Andes.
+                  <h5 class="card-title fw-bold">Costa Rica</h5>
+                  <p class="card-text">Costa Rica me cautiva con sus playas, selvas, cultura y gente
+                    amable. Me ofrece la aventura y el descanso en un paraíso tropical.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card">
-                <img src="./images/paris.png" class="card-img-top" alt="..." />
+            <div class="col-md-4">
+              <div class="card text-white bg-naranja mb-3">
+                <img src="./images/liberty-state-new-york.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title">Paris - Francia</h5>
-                  <p class="card-text">
-                    París, la capital de Francia, es una importante ciudad
-                    europea y un centro mundial del arte, la moda, la
-                    gastronomía y la cultura. Su paisaje urbano del siglo XIX
-                    está entrecruzado por amplios bulevares y el río Sena.
-                    Aparte de estos hitos, como la Torre Eiffel y la catedral
-                    gótica de Notre Dame del siglo XII, la ciudad es famosa por
-                    su cultura del café y las tiendas de moda de diseñador a lo
-                    largo de la calle Rue du Faubourg Saint-Honoré.
+                  <h5 class="card-title fw-bold">Nueva York</h5>
+                  <p class="card-text">Nueva York es mi lugar preferido gracias a su vibrante cultura,
+                    arquitectura icónica, gastronomía y diversidad de opciones. ¡La ciudad que nunca
+                    duerme!
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <!--Footer pie de pagina-->
-    <footer>
-      <section id="socialnetwork">
-        <div class="container">
-          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center">
-              <!-- <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+    </section>
+  </main>
+  <!--Footer pie de pagina-->
+  <footer>
+    <section id="socialnetwork">
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <!-- <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
                 <svg class="bi" width="30" height="24">
                   <use xlink:href="#bootstrap"></use>
                 </svg>
               </a> !-->
-              <span class="mb-3 mb-md-0 text-muted"
-                >© 2019-2023 Tex-Trip. Creado con ♥ por
-                <a href="www.uxlab.com.ar">UXLAB</a></span
-              >
-            </div>
+            <span class="mb-3 mb-md-0 text-muted">© 2019-2023 Tex-Trip. Creado con ♥ por
+              <a href="www.uxlab.com.ar">UXLAB</a></span>
+          </div>
 
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-              <li class="ms-3">
-                <a
-                  class="text-muted"
-                  href="https://web.whatsapp.com/send?phone=543584122042"
-                  ><svg class="bi" width="24" height="24">
-                    <use xlink:href="#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="ms-3">
-                <a class="text-muted" href="https://www.instagram.com/tex_trip/"
-                  ><svg class="bi" width="24" height="24">
-                    <use xlink:href="#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="ms-3">
-                <a class="text-muted" href="https://www.facebook.com/tex_trip/"
-                  ><svg class="bi" width="24" height="24">
-                    <use xlink:href="#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </footer>
-        </div>
-      </section>
-  </body>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="text-muted" href="https://web.whatsapp.com/send?phone=543584122042"><svg class="bi" width="24"
+                  height="24">
+                  <use xlink:href="#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a class="text-muted" href="https://www.instagram.com/tex_trip/"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a class="text-muted" href="https://www.facebook.com/tex_trip/"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </section>
+</body>
+
 </html>
